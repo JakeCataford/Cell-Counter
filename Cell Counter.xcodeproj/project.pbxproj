@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		232672E51E020DE500C08146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232672E41E020DE500C08146 /* AppDelegate.swift */; };
+		232672E71E020DE500C08146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232672E61E020DE500C08146 /* ViewController.swift */; };
+		232672E91E020DE500C08146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232672E81E020DE500C08146 /* Assets.xcassets */; };
+		232672EC1E020DE500C08146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232672EA1E020DE500C08146 /* Main.storyboard */; };
+		232672F71E020DE500C08146 /* Cell_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232672F61E020DE500C08146 /* Cell_CounterTests.swift */; };
+		232673021E020DE500C08146 /* Cell_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232673011E020DE500C08146 /* Cell_CounterUITests.swift */; };
+		232673121E0223A000C08146 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232673111E0223A000C08146 /* opencv2.framework */; };
+		232673161E02256900C08146 /* OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 232673151E02256900C08146 /* OpenCV.mm */; };
+		232673191E023AB200C08146 /* NSImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 232673181E023AB200C08146 /* NSImage+OpenCV.mm */; };
+		23A69AB81E025D6A00EAB326 /* CellCountResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A69AB71E025D6A00EAB326 /* CellCountResult.m */; };
+		23A69ABD1E03068000EAB326 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A69ABC1E03068000EAB326 /* RangeSlider.swift */; };
+		23A69AC01E0722E100EAB326 /* BatchImageCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A69ABF1E0722E100EAB326 /* BatchImageCounter.swift */; };
+		23A69AC31E07280A00EAB326 /* SearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A69AC21E07280A00EAB326 /* SearchParams.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		232672F31E020DE500C08146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 232672D91E020DE500C08146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 232672E01E020DE500C08146;
+			remoteInfo = "Cell Counter";
+		};
+		232672FE1E020DE500C08146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 232672D91E020DE500C08146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 232672E01E020DE500C08146;
+			remoteInfo = "Cell Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		232672E11E020DE500C08146 /* Cell Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cell Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		232672E41E020DE500C08146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		232672E61E020DE500C08146 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		232672E81E020DE500C08146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		232672EB1E020DE500C08146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		232672ED1E020DE500C08146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232672F21E020DE500C08146 /* Cell CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cell CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		232672F61E020DE500C08146 /* Cell_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_CounterTests.swift; sourceTree = "<group>"; };
+		232672F81E020DE500C08146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232672FD1E020DE500C08146 /* Cell CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cell CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		232673011E020DE500C08146 /* Cell_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_CounterUITests.swift; sourceTree = "<group>"; };
+		232673031E020DE500C08146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232673111E0223A000C08146 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		232673131E02256900C08146 /* Cell Counter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cell Counter-Bridging-Header.h"; sourceTree = "<group>"; };
+		232673141E02256900C08146 /* OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCV.h; sourceTree = "<group>"; };
+		232673151E02256900C08146 /* OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCV.mm; sourceTree = "<group>"; };
+		232673171E023AB200C08146 /* NSImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+OpenCV.h"; sourceTree = "<group>"; };
+		232673181E023AB200C08146 /* NSImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+OpenCV.mm"; sourceTree = "<group>"; };
+		23A69AB61E025D6A00EAB326 /* CellCountResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellCountResult.h; sourceTree = "<group>"; };
+		23A69AB71E025D6A00EAB326 /* CellCountResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellCountResult.m; sourceTree = "<group>"; };
+		23A69ABC1E03068000EAB326 /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		23A69ABF1E0722E100EAB326 /* BatchImageCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchImageCounter.swift; sourceTree = "<group>"; };
+		23A69AC11E07280A00EAB326 /* SearchParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchParams.h; sourceTree = "<group>"; };
+		23A69AC21E07280A00EAB326 /* SearchParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchParams.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		232672DE1E020DE500C08146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232673121E0223A000C08146 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672EF1E020DE500C08146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672FA1E020DE500C08146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232672D81E020DE500C08146 = {
+			isa = PBXGroup;
+			children = (
+				232672E31E020DE500C08146 /* Cell Counter */,
+				232672F51E020DE500C08146 /* Cell CounterTests */,
+				232673001E020DE500C08146 /* Cell CounterUITests */,
+				232672E21E020DE500C08146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		232672E21E020DE500C08146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				232672E11E020DE500C08146 /* Cell Counter.app */,
+				232672F21E020DE500C08146 /* Cell CounterTests.xctest */,
+				232672FD1E020DE500C08146 /* Cell CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		232672E31E020DE500C08146 /* Cell Counter */ = {
+			isa = PBXGroup;
+			children = (
+				23A69ABB1E03063200EAB326 /* OpenCV */,
+				23A69ABA1E03061F00EAB326 /* Categories */,
+				23A69AB91E03061200EAB326 /* Frameworks */,
+				23A69ABE1E03068A00EAB326 /* UI Components */,
+				232672E41E020DE500C08146 /* AppDelegate.swift */,
+				232672E61E020DE500C08146 /* ViewController.swift */,
+				232672E81E020DE500C08146 /* Assets.xcassets */,
+				232672EA1E020DE500C08146 /* Main.storyboard */,
+				232672ED1E020DE500C08146 /* Info.plist */,
+				23A69ABF1E0722E100EAB326 /* BatchImageCounter.swift */,
+			);
+			path = "Cell Counter";
+			sourceTree = "<group>";
+		};
+		232672F51E020DE500C08146 /* Cell CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				232672F61E020DE500C08146 /* Cell_CounterTests.swift */,
+				232672F81E020DE500C08146 /* Info.plist */,
+			);
+			path = "Cell CounterTests";
+			sourceTree = "<group>";
+		};
+		232673001E020DE500C08146 /* Cell CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				232673011E020DE500C08146 /* Cell_CounterUITests.swift */,
+				232673031E020DE500C08146 /* Info.plist */,
+			);
+			path = "Cell CounterUITests";
+			sourceTree = "<group>";
+		};
+		23A69AB91E03061200EAB326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232673111E0223A000C08146 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23A69ABA1E03061F00EAB326 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				232673171E023AB200C08146 /* NSImage+OpenCV.h */,
+				232673181E023AB200C08146 /* NSImage+OpenCV.mm */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		23A69ABB1E03063200EAB326 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				232673131E02256900C08146 /* Cell Counter-Bridging-Header.h */,
+				23A69AB61E025D6A00EAB326 /* CellCountResult.h */,
+				23A69AB71E025D6A00EAB326 /* CellCountResult.m */,
+				232673141E02256900C08146 /* OpenCV.h */,
+				232673151E02256900C08146 /* OpenCV.mm */,
+				23A69AC11E07280A00EAB326 /* SearchParams.h */,
+				23A69AC21E07280A00EAB326 /* SearchParams.m */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		23A69ABE1E03068A00EAB326 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				23A69ABC1E03068000EAB326 /* RangeSlider.swift */,
+			);
+			name = "UI Components";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		232672E01E020DE500C08146 /* Cell Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 232673061E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell Counter" */;
+			buildPhases = (
+				232672DD1E020DE500C08146 /* Sources */,
+				232672DE1E020DE500C08146 /* Frameworks */,
+				232672DF1E020DE500C08146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cell Counter";
+			productName = "Cell Counter";
+			productReference = 232672E11E020DE500C08146 /* Cell Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		232672F11E020DE500C08146 /* Cell CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 232673091E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell CounterTests" */;
+			buildPhases = (
+				232672EE1E020DE500C08146 /* Sources */,
+				232672EF1E020DE500C08146 /* Frameworks */,
+				232672F01E020DE500C08146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				232672F41E020DE500C08146 /* PBXTargetDependency */,
+			);
+			name = "Cell CounterTests";
+			productName = "Cell CounterTests";
+			productReference = 232672F21E020DE500C08146 /* Cell CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		232672FC1E020DE500C08146 /* Cell CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2326730C1E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell CounterUITests" */;
+			buildPhases = (
+				232672F91E020DE500C08146 /* Sources */,
+				232672FA1E020DE500C08146 /* Frameworks */,
+				232672FB1E020DE500C08146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				232672FF1E020DE500C08146 /* PBXTargetDependency */,
+			);
+			name = "Cell CounterUITests";
+			productName = "Cell CounterUITests";
+			productReference = 232672FD1E020DE500C08146 /* Cell CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		232672D91E020DE500C08146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Jake Cataford";
+				TargetAttributes = {
+					232672E01E020DE500C08146 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					232672F11E020DE500C08146 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 232672E01E020DE500C08146;
+					};
+					232672FC1E020DE500C08146 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 232672E01E020DE500C08146;
+					};
+				};
+			};
+			buildConfigurationList = 232672DC1E020DE500C08146 /* Build configuration list for PBXProject "Cell Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 232672D81E020DE500C08146;
+			productRefGroup = 232672E21E020DE500C08146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				232672E01E020DE500C08146 /* Cell Counter */,
+				232672F11E020DE500C08146 /* Cell CounterTests */,
+				232672FC1E020DE500C08146 /* Cell CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		232672DF1E020DE500C08146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232672E91E020DE500C08146 /* Assets.xcassets in Resources */,
+				232672EC1E020DE500C08146 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672F01E020DE500C08146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672FB1E020DE500C08146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		232672DD1E020DE500C08146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A69AB81E025D6A00EAB326 /* CellCountResult.m in Sources */,
+				232672E71E020DE500C08146 /* ViewController.swift in Sources */,
+				23A69AC01E0722E100EAB326 /* BatchImageCounter.swift in Sources */,
+				23A69AC31E07280A00EAB326 /* SearchParams.m in Sources */,
+				232673191E023AB200C08146 /* NSImage+OpenCV.mm in Sources */,
+				232673161E02256900C08146 /* OpenCV.mm in Sources */,
+				23A69ABD1E03068000EAB326 /* RangeSlider.swift in Sources */,
+				232672E51E020DE500C08146 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672EE1E020DE500C08146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232672F71E020DE500C08146 /* Cell_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		232672F91E020DE500C08146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232673021E020DE500C08146 /* Cell_CounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		232672F41E020DE500C08146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 232672E01E020DE500C08146 /* Cell Counter */;
+			targetProxy = 232672F31E020DE500C08146 /* PBXContainerItemProxy */;
+		};
+		232672FF1E020DE500C08146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 232672E01E020DE500C08146 /* Cell Counter */;
+			targetProxy = 232672FE1E020DE500C08146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		232672EA1E020DE500C08146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				232672EB1E020DE500C08146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		232673041E020DE500C08146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		232673051E020DE500C08146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		232673071E020DE500C08146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cell\\ Counter",
+				);
+				INFOPLIST_FILE = "Cell Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cell Counter/Cell Counter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		232673081E020DE500C08146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cell\\ Counter",
+				);
+				INFOPLIST_FILE = "Cell Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cell Counter/Cell Counter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2326730A1E020DE500C08146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cell CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cell Counter.app/Contents/MacOS/Cell Counter";
+			};
+			name = Debug;
+		};
+		2326730B1E020DE500C08146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cell CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cell Counter.app/Contents/MacOS/Cell Counter";
+			};
+			name = Release;
+		};
+		2326730D1E020DE500C08146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cell CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Cell Counter";
+			};
+			name = Debug;
+		};
+		2326730E1E020DE500C08146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cell CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecataford.Cell-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Cell Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		232672DC1E020DE500C08146 /* Build configuration list for PBXProject "Cell Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				232673041E020DE500C08146 /* Debug */,
+				232673051E020DE500C08146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		232673061E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				232673071E020DE500C08146 /* Debug */,
+				232673081E020DE500C08146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		232673091E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2326730A1E020DE500C08146 /* Debug */,
+				2326730B1E020DE500C08146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2326730C1E020DE500C08146 /* Build configuration list for PBXNativeTarget "Cell CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2326730D1E020DE500C08146 /* Debug */,
+				2326730E1E020DE500C08146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 232672D91E020DE500C08146 /* Project object */;
+}

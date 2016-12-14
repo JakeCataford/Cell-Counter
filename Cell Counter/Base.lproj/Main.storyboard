@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Cell Counter" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Cell Counter" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Cell Counter" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Cell Counter" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Cell Counter" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Cell_Counter" customModuleProvider="target"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Masha Ultra Pro Cell Count 20XX" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="ihg-5U-Npw"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Cell_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" userLabel="View Controller">
+                        <rect key="frame" x="0.0" y="0.0" width="682" height="695"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-hT-0cw">
+                                <rect key="frame" x="17" y="457" width="206" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0eA-UT-skG"/>
+                                    <constraint firstAttribute="width" secondItem="c3L-hT-0cw" secondAttribute="height" multiplier="197:183" id="2tr-NP-JdF"/>
+                                </constraints>
+                                <imageCell key="cell" selectable="YES" editable="YES" alignment="left" toolTip="Drag Input Image Here" identifier="Input Image" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="NGm-7q-7xx"/>
+                                <connections>
+                                    <action selector="inputImageDidChange:" target="XfG-lQ-9wD" id="y0E-iz-Lcf"/>
+                                </connections>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-NA-zFm">
+                                <rect key="frame" x="264" y="35" width="401" height="614"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="EnR-ug-0E2"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-Ji-6H7">
+                                <rect key="frame" x="608" y="654" width="56" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Counted" id="ljg-tF-vj1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cID-BY-0bZ">
+                                <rect key="frame" x="18" y="654" width="120" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Input Image" id="7XO-2y-K44">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-gz-rlP">
+                                <rect key="frame" x="253" y="11" width="411" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Load an image to count cells." id="mYb-GU-SlX">
+                                    <font key="font" metaFont="systemThin" size="13"/>
+                                    <color key="textColor" red="0.63702234455958551" green="0.63702234455958551" blue="0.63702234455958551" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5R-Ej-ne6">
+                                <rect key="frame" x="20" y="137" width="200" height="278"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tPE-cU-JqE">
+                                        <rect key="frame" x="-2" y="261" width="170" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Min Distance Between Cells" id="J9r-b8-hmq">
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <slider horizontalHuggingPriority="1000" verticalHuggingPriority="759" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-qq-DZH">
+                                        <rect key="frame" x="-2" y="229" width="204" height="24"/>
+                                        <sliderCell key="cell" alignment="left" maxValue="5" doubleValue="1.25" tickMarkPosition="above" numberOfTickMarks="5" sliderType="linear" id="9uA-NX-paP"/>
+                                        <connections>
+                                            <action selector="minDistanceDidChange:" target="XfG-lQ-9wD" id="917-ol-qzQ"/>
+                                        </connections>
+                                    </slider>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eqc-uU-dre">
+                                        <rect key="frame" x="-2" y="206" width="65" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Threshold" id="cPf-uF-BVF">
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Yn8-Iy-vuU" userLabel="Threshold Range Slider" customClass="RangeSlider" customModule="Cell_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="183" width="200" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="YeC-iQ-Hzq"/>
+                                        </constraints>
+                                    </customView>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="QXb-NV-2HV">
+                                        <rect key="frame" x="-2" y="159" width="102" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Filter By Area" bezelStyle="regularSquare" imagePosition="left" alignment="center" state="on" sound="Basso" inset="2" id="fZ1-bA-CrA">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="filterByAreaCheckboxDidChange:" target="XfG-lQ-9wD" id="qiO-ev-csS"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="PrK-mh-I1E" userLabel="Area Range Slider" customClass="RangeSlider" customModule="Cell_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="138" width="200" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="V0M-yM-hPX"/>
+                                        </constraints>
+                                    </customView>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="q8V-cO-Zhj">
+                                        <rect key="frame" x="-2" y="114" width="112" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Filter By Inertia" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="pNL-Nb-zFl">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="filterByInertiaCheckboxDidChange:" target="XfG-lQ-9wD" id="GF3-c0-lPB"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="68M-Mf-hfe" userLabel="Inertia Range Slider" customClass="RangeSlider" customModule="Cell_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="93" width="200" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="5lu-wn-8y6"/>
+                                        </constraints>
+                                    </customView>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="IdF-8a-2Kd">
+                                        <rect key="frame" x="-2" y="69" width="133" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Filter By Convexity" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KAG-an-7KB">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="filterByConvexityCheckboxDidChange:" target="XfG-lQ-9wD" id="13j-wN-Bt2"/>
+                                        </connections>
+                                    </button>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="NvG-vb-nto" userLabel="Convexity Range Slider" customClass="RangeSlider" customModule="Cell_Counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="200" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="bXi-ZL-ISH"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2fY-4D-e1I">
+                                        <rect key="frame" x="-2" y="23" width="82" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Search Color" id="b9A-YN-p2w">
+                                            <font key="font" metaFont="systemUltraLight" size="13"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERQ-zo-Mge">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="15"/>
+                                        <subviews>
+                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M04-Vx-d2l">
+                                                <rect key="frame" x="-2" y="-2" width="164" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="3dA-ir-Ydp"/>
+                                                </constraints>
+                                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="XnZ-Wb-Tdr"/>
+                                                <connections>
+                                                    <action selector="brightnessSliderDidChange:" target="XfG-lQ-9wD" id="I5D-ET-ogj"/>
+                                                </connections>
+                                            </slider>
+                                            <colorWell bordered="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-F8-IZ1">
+                                                <rect key="frame" x="168" y="0.0" width="32" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="JAe-6a-eaM"/>
+                                                </constraints>
+                                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </colorWell>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yn8-Iy-vuU" firstAttribute="leading" secondItem="s5R-Ej-ne6" secondAttribute="leading" id="3pj-Of-cTg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yn8-Iy-vuU" secondAttribute="trailing" id="TEu-mY-Q7y"/>
+                                    <constraint firstAttribute="width" constant="200" id="Vw4-Dn-Usl"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ald-eD-y19">
+                                <rect key="frame" x="18" y="423" width="172" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Settings" id="jnh-ti-Qw4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QxS-d4-BYT">
+                                <rect key="frame" x="36" y="89" width="168" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="MQ8-lc-e6g"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Batch Process ..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eOb-IN-Cik">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="onBatchProcessShouldOccur:" target="XfG-lQ-9wD" id="Ncd-7d-K3y"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c3L-hT-0cw" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="49" id="58C-Sx-Faj"/>
+                            <constraint firstItem="cID-BY-0bZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="5Wi-8s-SC5"/>
+                            <constraint firstItem="s5R-Ej-ne6" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="9SE-ZK-2il"/>
+                            <constraint firstItem="QxS-d4-BYT" firstAttribute="top" secondItem="s5R-Ej-ne6" secondAttribute="bottom" constant="20" id="AYt-ij-Op3"/>
+                            <constraint firstItem="s5R-Ej-ne6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="280" id="BSg-w5-DEM"/>
+                            <constraint firstItem="s5R-Ej-ne6" firstAttribute="top" secondItem="Ald-eD-y19" secondAttribute="bottom" constant="8" id="LDx-5T-V8P"/>
+                            <constraint firstItem="c3L-hT-0cw" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="V74-p3-PW5"/>
+                            <constraint firstItem="cID-BY-0bZ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="24" id="kQz-1Z-2Pz"/>
+                            <constraint firstItem="Ald-eD-y19" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="qhR-vB-hff"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AreaRangeSlider" destination="PrK-mh-I1E" id="BJ3-6j-KWs"/>
+                        <outlet property="BrightnessSlider" destination="M04-Vx-d2l" id="KDq-eJ-9UB"/>
+                        <outlet property="CellsCountedLabel" destination="i5N-gz-rlP" id="9nD-7o-bhI"/>
+                        <outlet property="ConvexityRangeSlider" destination="NvG-vb-nto" id="xp0-wc-qvf"/>
+                        <outlet property="FilterByAreaCheckbox" destination="QXb-NV-2HV" id="aCq-6V-L3G"/>
+                        <outlet property="FilterByConvexityCheckbox" destination="IdF-8a-2Kd" id="l5Q-S5-dEb"/>
+                        <outlet property="FilterByInteriaCheckbox" destination="q8V-cO-Zhj" id="jcF-SX-glE"/>
+                        <outlet property="InertiaRangeSlider" destination="68M-Mf-hfe" id="heI-0f-1pl"/>
+                        <outlet property="InputImageCell" destination="c3L-hT-0cw" id="uNN-0L-UmR"/>
+                        <outlet property="MinDistanceSlider" destination="9uA-NX-paP" id="bft-tm-HCn"/>
+                        <outlet property="OutputImageCell" destination="aYB-NA-zFm" id="jGY-7c-bqR"/>
+                        <outlet property="SearchColorPicker" destination="iFD-F8-IZ1" id="Pqo-lN-Xr3"/>
+                        <outlet property="ThresholdRangeSlider" destination="Yn8-Iy-vuU" id="WIu-zx-8Xv"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="867.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <sound name="Basso"/>
+    </resources>
+</document>
